@@ -27,38 +27,6 @@ body header h1 {
   align-items: center;
 }
 
-  @media screen and (min-width: 576px) {
-    body header h1 {
-      color: var(--color5);
-      margin: 1.5vh 0; 
-      font-size: 3em;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    body header nav {
-      background-color: var(--color5);
-      border-bottom: 1vh var(--color1) solid;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    
-      justify-content: space-around;
-    }
-
-    body header nav div {
-      padding: 0.4vh 0.4vh;
-    } 
-    
-    body header nav div li {
-      margin: 0 0;
-      list-style: none;
-      font-size: 5em;
-    }
-  }
-
-
 body header nav {
   background-color: var(--color5);
   border-bottom: 1vh var(--color1) solid;
@@ -92,10 +60,45 @@ body header nav div li {
 .item {
   background: var(--color3);
   border: 0.5vh var(--color1) solid;
-  width: 45vh;
-  height: 45vh;
+  width: 80vw;
+  height: 80vw;
   margin-top: 4vh;
 }
 
 /* Alignments */
 
+@media screen and (min-width: 576px) {
+  body header h1 {
+    color: var(--color5);
+    margin: 1.5vh 0; 
+    font-size: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body header nav {
+    background-color: var(--color5);
+    border-bottom: 1vh var(--color1) solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+    justify-content: space-around;
+  }
+
+  body header nav div {
+    padding: 0.4vh 0.4vh;
+  } 
+  
+  body header nav div img {
+    width: 64px;
+    height: 64px;
+  }
+
+  body header nav div li {
+    margin: 0 0;
+    list-style: none;
+    font-size: 4em;
+  }
+}
